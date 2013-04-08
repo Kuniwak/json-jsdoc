@@ -2,8 +2,6 @@
 // http://orgachem.mit-license.org
 
 
-var startTime = new Date().getTime();
-
 var path = require('path');
 var fs = require('fs');
 
@@ -281,6 +279,8 @@ JsonPublisher.prototype.buildFunctionObject = function(symbol) {
  *  @param {Tutorial} tutorials Tutorials.
  */
 JsonPublisher.prototype.publish = function(taffyData, opts, tutorials) {
+  var startTime = new Date().getTime();
+
   /**
    * Map has pairs that longnames and each members.
    * @type {Object.<Array.<tsumekusaJsdoc.dom.DocletWrapper>>}
@@ -308,7 +308,7 @@ JsonPublisher.prototype.publish = function(taffyData, opts, tutorials) {
       }
     }
     else {
-      console.log('WARNING: Unknown file name doclet found.');
+      console.log('WARNING: Unknown file name doclet found.', symbol);
     }
   }, this);
 
