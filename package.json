@@ -1,0 +1,24 @@
+{
+  "name": "jsonjsdoc",
+  "description": "JSON style template for partial documentation.",
+  "version": "0.0.0",
+  "author": "Orga Chem <orga.chem.job@gmail.com>",
+  "keywords": [
+    "jsdoc",
+    "template",
+    "json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/OrgaChem/json-jsdoc.git"
+  },
+  "bugs": {
+    "mail": "orga.chem.job@gmail.com",
+    "url": "https://github.com/OrgaChem/json-jsdoc/issues"
+  },
+  "main": "lib/publish.js",
+  "readmeFilename": "README.md",
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
