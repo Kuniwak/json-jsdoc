@@ -20,10 +20,6 @@ Output format
 Output json is equivalent to an array of jsdoc/Doclet.
 It means that ```JSON.parse(output)``` is equivalent to ```taffyData().get()``` in for each script.
 
-Install
--------
-
-
 License
 -------
 This script licensed under the [MIT](http://orgachem.mit-license.org). 
