@@ -1,7 +1,7 @@
 {
   "name": "jsonjsdoc",
   "description": "JSON style template for partial documentation.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Orga Chem <orga.chem.job@gmail.com>",
   "keywords": [
     "jsdoc",
@@ -16,9 +16,15 @@
     "mail": "orga.chem.job@gmail.com",
     "url": "https://github.com/OrgaChem/json-jsdoc/issues"
   },
+  "scripts": {
+    "test": "node test/run.js"
+  },
   "main": "lib/publish.js",
   "readmeFilename": "README.md",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "nodeunit": "~0.8.0",
+    "jsdoc": "~3.2.0"
+  },
   "license": "MIT"
 }
