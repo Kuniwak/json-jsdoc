@@ -315,19 +315,23 @@ JsonPublisher.prototype.publish = function(taffyData, opts, tutorials) {
   symbols = null;
 
   for (var filepath in files) {
-    var outpath = path.join(opts.destination, filepath + 'on');
-    var
-    console.log('Publishing: ' + outpath);
-
-    try {
-      fs.mkPath(path.dirname(outpath));
-      fs.writeFileSync(outpath, JSON.stringify(files[filepath]), 'utf8');
+    var json = JSON.stringify(files[filepath]);
+    if (opts.destination === 'console') {
+      console.log();
     }
-    catch (e) {
-      console.log(files[filepath]);
-      throw e;
-    }
+    else {
+      var outpath = path.join(opts.destination, filepath + 'on');
+      console.log('Publishing: ' + outpath);
 
+      try {
+        fs.mkPath(path.dirname(outpath));
+        fs.writeFileSync(outpath, json, 'utf8');
+      }
+      catch (e) {
+        console.log(outpath);
+        throw e;
+      }
+    }
     delete files[filepath];
   }
 
