@@ -1,7 +1,7 @@
 {
   "name": "jsonjsdoc",
   "description": "JSON style template for partial documentation.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Orga Chem <orga.chem.job@gmail.com>",
   "keywords": [
     "jsdoc",
@@ -24,7 +24,7 @@
   "dependencies": {},
   "devDependencies": {
     "nodeunit": "~0.8.0",
-    "jsdoc": "~3.2.0"
+    "jsdoc": "git://github.com/jsdoc3/jsdoc.git"
   },
   "license": "MIT"
 }
