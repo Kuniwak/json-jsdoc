@@ -1,5 +1,6 @@
 JSON template for Jsdoc3
 ========================
+[![Build Status](https://travis-ci.org/OrgaChem/json-jsdoc.png)](https://travis-ci.org/OrgaChem/json-jsdoc)
 
 JSON style template for [Jsdoc3](https://github.com/jsdoc3/jsdoc).
 This template is like the haruki template, but a purpose of the template is supporting a partial documentation.
