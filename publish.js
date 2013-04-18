@@ -315,11 +315,13 @@ JsonPublisher.prototype.publish = function(taffyData, opts, tutorials) {
   symbols = null;
 
   for (var filepath in files) {
-    var json = JSON.stringify(files[filepath]);
+    var json;
     if (opts.destination === 'console') {
-      console.log();
+      json = JSON.stringify(files[filepath], null, '  ');
+      console.log(json);
     }
     else {
+      json = JSON.stringify(files[filepath]);
       var outpath = path.join(opts.destination, filepath + 'on');
       console.log('Publishing: ' + outpath);
 
